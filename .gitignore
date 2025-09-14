@@ -1,2 +1,11 @@
 node_modules/
 .env*
+
+# Docker
+.dockerignore
+
+# Neon Local
+.neon_local/
+
+# Docker Compose override files
+docker-compose.override.yml
