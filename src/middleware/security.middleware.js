@@ -4,6 +4,10 @@ import { slidingWindow } from '@arcjet/node';
 
 const securityMiddleware = async (req, res, next) => {
   try {
+    if (process.env.NODE_ENV === 'development') {
+      return next();
+    }
+
     const role = req.user?.role || 'guest';
 
     let limit;
