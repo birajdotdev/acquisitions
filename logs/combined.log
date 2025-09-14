@@ -1,0 +1,46 @@
+{"level":"info","message":"Hello from Acquisitions!","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [14/Sep/2025:01:38:55 +0000] \"GET / HTTP/1.1\" 200 24 \"-\" \"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"Hello from Acquisitions!","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [14/Sep/2025:01:51:30 +0000] \"GET / HTTP/1.1\" 200 24 \"-\" \"HTTPie\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [14/Sep/2025:01:51:37 +0000] \"GET /api HTTP/1.1\" 200 41 \"-\" \"HTTPie\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [14/Sep/2025:01:51:45 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"HTTPie\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [14/Sep/2025:01:52:17 +0000] \"POST /api/auth/sign-in HTTP/1.1\" 200 31 \"-\" \"HTTPie\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [14/Sep/2025:03:34:55 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 200 31 \"-\" \"HTTPie\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [14/Sep/2025:03:35:48 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 400 59 \"-\" \"HTTPie\"","service":"acquisitions-api"}
+{"level":"info","message":"User registered successfully: birajshrestha2007@gmail.com","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [14/Sep/2025:03:37:41 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 201 134 \"-\" \"HTTPie\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [14/Sep/2025:03:37:52 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 400 59 \"-\" \"HTTPie\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [14/Sep/2025:03:38:57 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 400 59 \"-\" \"HTTPie\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [14/Sep/2025:03:38:58 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 400 59 \"-\" \"HTTPie\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [14/Sep/2025:03:38:59 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 400 59 \"-\" \"HTTPie\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [14/Sep/2025:03:39:00 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 400 59 \"-\" \"HTTPie\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [14/Sep/2025:03:39:01 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 400 59 \"-\" \"HTTPie\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [14/Sep/2025:03:39:02 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 400 59 \"-\" \"HTTPie\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [14/Sep/2025:03:40:37 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 400 59 \"-\" \"HTTPie\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [14/Sep/2025:03:40:38 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 400 59 \"-\" \"HTTPie\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [14/Sep/2025:03:40:38 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 400 59 \"-\" \"HTTPie\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [14/Sep/2025:03:40:38 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 400 59 \"-\" \"HTTPie\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [14/Sep/2025:03:40:39 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 400 59 \"-\" \"HTTPie\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [14/Sep/2025:03:40:46 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 400 59 \"-\" \"HTTPie\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [14/Sep/2025:03:40:47 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 400 59 \"-\" \"HTTPie\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [14/Sep/2025:03:41:56 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 400 144 \"-\" \"HTTPie\"","service":"acquisitions-api"}
+{"level":"info","message":"User created with email: birajshrestha2007@gmail.com","service":"acquisitions-api"}
+{"level":"info","message":"User registered successfully: birajshrestha2007@gmail.com","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [14/Sep/2025:04:11:21 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 201 212 \"-\" \"HTTPie\"","service":"acquisitions-api"}
+{"level":"error","message":"Error creating user User already exists","service":"acquisitions-api","stack":"Error: User already exists\n    at createUser (file:///home/biraj/Code/acquisitions/src/services/auth.service.js:25:40)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async signup (file:///home/biraj/Code/acquisitions/src/controllers/auth.controller.js:21:18)"}
+{"level":"error","message":"Signup error Error creating user","service":"acquisitions-api","stack":"Error: Error creating user\n    at createUser (file:///home/biraj/Code/acquisitions/src/services/auth.service.js:45:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async signup (file:///home/biraj/Code/acquisitions/src/controllers/auth.controller.js:21:18)"}
+{"level":"info","message":"::1 - - [14/Sep/2025:04:38:31 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 500 467 \"-\" \"HTTPie\"","service":"acquisitions-api"}
+{"level":"error","message":"Error creating the user: Error: User with this email already exists","service":"acquisitions-api"}
+{"level":"error","message":"Signup error User with this email already exists","service":"acquisitions-api","stack":"Error: User with this email already exists\n    at createUser (file:///home/biraj/Code/acquisitions/src/services/auth.service.js:34:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async signup (file:///home/biraj/Code/acquisitions/src/controllers/auth.controller.js:21:18)"}
+{"level":"info","message":"::1 - - [14/Sep/2025:05:52:01 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 409 31 \"-\" \"HTTPie\"","service":"acquisitions-api"}
+{"level":"error","message":"Error creating the user: TypeError: Cannot convert undefined or null to object","service":"acquisitions-api"}
+{"level":"error","message":"Signup error Cannot convert undefined or null to object","service":"acquisitions-api","stack":"TypeError: Cannot convert undefined or null to object\n    at Function.entries (<anonymous>)\n    at orderSelectedFields (file:///home/biraj/Code/acquisitions/node_modules/drizzle-orm/utils.js:53:17)\n    at file:///home/biraj/Code/acquisitions/node_modules/drizzle-orm/utils.js:63:22\n    at Array.reduce (<anonymous>)\n    at orderSelectedFields (file:///home/biraj/Code/acquisitions/node_modules/drizzle-orm/utils.js:53:33)\n    at QueryPromise.returning (file:///home/biraj/Code/acquisitions/node_modules/drizzle-orm/pg-core/query-builders/insert.js:75:29)\n    at createUser (file:///home/biraj/Code/acquisitions/src/services/auth.service.js:41:8)\n    at async signup (file:///home/biraj/Code/acquisitions/src/controllers/auth.controller.js:21:18)"}
+{"level":"info","message":"::1 - - [14/Sep/2025:05:52:51 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 500 988 \"-\" \"HTTPie\"","service":"acquisitions-api"}
+{"level":"info","message":"User birajshrestha2004@gmail.com created successfully","service":"acquisitions-api"}
+{"level":"info","message":"User registered successfully: birajshrestha2004@gmail.com","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [14/Sep/2025:05:53:46 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 201 121 \"-\" \"HTTPie\"","service":"acquisitions-api"}
+{"level":"info","message":"User birajshrestha2004@gmail.com authenticated successfully","service":"acquisitions-api"}
+{"level":"info","message":"User signed in successfully: birajshrestha2004@gmail.com","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [14/Sep/2025:06:32:02 +0000] \"POST /api/auth/sign-in HTTP/1.1\" 200 133 \"-\" \"HTTPie\"","service":"acquisitions-api"}
+{"level":"info","message":"User signed out successfully","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [14/Sep/2025:06:32:50 +0000] \"POST /api/auth/sign-out HTTP/1.1\" 200 42 \"-\" \"HTTPie\"","service":"acquisitions-api"}
