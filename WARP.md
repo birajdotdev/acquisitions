@@ -9,6 +9,7 @@ This is a Node.js Express API for an acquisitions platform featuring user authen
 ## Commands
 
 ### Development
+
 ```bash
 # Start development server with hot reload
 npm run dev
@@ -18,6 +19,7 @@ npm start
 ```
 
 ### Code Quality
+
 ```bash
 # Run ESLint
 npm run lint
@@ -33,6 +35,7 @@ npm run format:check
 ```
 
 ### Database Operations
+
 ```bash
 # Generate new migration files
 npm run db:generate
@@ -47,7 +50,9 @@ npm run db:studio
 ## Architecture
 
 ### Module System
+
 The project uses Node.js ES modules with custom import maps defined in `package.json`:
+
 - `#src/*` - Main source directory
 - `#config/*` - Configuration files (database, logger)
 - `#controllers/*` - Route handlers
@@ -59,6 +64,7 @@ The project uses Node.js ES modules with custom import maps defined in `package.
 - `#validations/*` - Zod validation schemas
 
 ### Directory Structure
+
 ```
 src/
 ├── app.js              # Express app configuration
@@ -76,13 +82,16 @@ src/
 ```
 
 ### Database Architecture
+
 - **ORM**: Drizzle ORM with PostgreSQL
 - **Database**: Neon (serverless PostgreSQL)
 - **Migrations**: Located in `drizzle/` directory
 - **Models**: Defined in `src/models/` using Drizzle's pgTable
 
 ### Authentication Flow
+
 The auth system implements JWT-based authentication:
+
 1. **Registration/Login**: Controllers validate input using Zod schemas
 2. **Password Hashing**: bcrypt with salt rounds of 10
 3. **JWT Tokens**: Signed with configurable secret, 1-day expiration
@@ -90,6 +99,7 @@ The auth system implements JWT-based authentication:
 5. **User Roles**: 'user' and 'admin' roles supported
 
 ### Logging Strategy
+
 - **Logger**: Winston with JSON formatting
 - **Levels**: Configurable via LOG_LEVEL environment variable
 - **Outputs**: Console (development), files (error.lg, combined.log)
@@ -98,6 +108,7 @@ The auth system implements JWT-based authentication:
 ## Environment Setup
 
 Required environment variables:
+
 - `DATABASE_URL` - Neon PostgreSQL connection string
 - `JWT_SECRET` - JWT signing secret (defaults to development key)
 - `LOG_LEVEL` - Winston log level (defaults to 'info')
@@ -107,13 +118,16 @@ Required environment variables:
 ## Development Notes
 
 ### Code Style
+
 - **ESLint Configuration**: Extends @eslint/js recommended
 - **Formatting**: Prettier with single quotes, 2-space indentation
 - **Module Format**: ES modules exclusively (type: "module")
 - **Error Handling**: Centralized via Express error handlers
 
 ### API Endpoints
+
 Current endpoints:
+
 - `GET /` - Health check with logging
 - `GET /health` - Structured health status
 - `GET /api` - API status message
@@ -122,13 +136,16 @@ Current endpoints:
 - `POST /api/auth/sign-out` - User logout (routes defined, controller implemented)
 
 ### Database Schema
+
 Current schema includes `users` table with:
+
 - Primary key (serial)
 - Name, email (unique), password (hashed)
 - Role-based access (user/admin)
 - Timestamps (created_at, updated_at)
 
 ### Testing Strategy
+
 - Test configuration present in ESLint for `tests/**/*.js`
 - Jest globals configured but no test framework currently installed
 - Consider adding test scripts when implementing tests

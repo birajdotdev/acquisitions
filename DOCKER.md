@@ -125,6 +125,7 @@ docker-compose -f docker-compose.prod.yml ps
 ## Environment Variables Reference
 
 ### Development (.env.development)
+
 ```env
 NODE_ENV=development
 PORT=3000
@@ -141,6 +142,7 @@ ARCJET_KEY=your_arcjet_dev_key
 ```
 
 ### Production (.env.production)
+
 ```env
 NODE_ENV=production
 PORT=3000
@@ -155,6 +157,7 @@ ARCJET_KEY=your_production_arcjet_key
 ### Common Issues
 
 1. **Neon Local connection fails**
+
    ```bash
    # Check if Neon Local is healthy
    docker-compose -f docker-compose.dev.yml ps
@@ -162,12 +165,14 @@ ARCJET_KEY=your_production_arcjet_key
    ```
 
 2. **App can't connect to database**
+
    ```bash
    # Verify network connectivity
    docker-compose -f docker-compose.dev.yml exec app nc -z neon-local 5432
    ```
 
 3. **Permission errors in production**
+
    ```bash
    # Check container logs
    docker-compose -f docker-compose.prod.yml logs app
@@ -201,20 +206,24 @@ docker-compose -f docker-compose.prod.yml ps   # Production
 ## Docker Architecture
 
 ### Multi-stage Dockerfile
+
 - **Base**: Common Node.js setup
 - **Development**: Includes dev dependencies, enables hot-reload
 - **Production**: Optimized, security-hardened, minimal dependencies
 
 ### Networking
+
 Both environments use isolated Docker networks for security.
 
 ### Volumes
+
 - **Development**: Source code mounted for hot-reload
 - **Production**: No external volumes for security
 
 ## Integration with CI/CD
 
 ### GitHub Actions Example
+
 ```yaml
 # Build and test
 - name: Build Docker image
